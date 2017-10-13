@@ -3,7 +3,49 @@
     "name": "friday demo",
     "main_branch": "master",
     "manager": "npm",
-    "integrations": [],
-    "update_behaviors": [],
-    "events": []
+    
+     "update_behaviors": {
+    "update_patch_version": {
+      "auto_start_updates": "always"
+    },
+    "update_minor_version": {
+      "auto_start_updates": "always"
+    },
+    "update_major_version": {
+      "auto_start_updates": "always"
+    }
+  },
+  "events": {
+    "new_updates_available": [
+      {
+        "sendmail": {
+          "emails": "test@mail-composer.com,test2@mail-composer.com",
+          "subject": "Test subject - Composer Project",
+          "message": "Test message - Composer Project",
+          "cc": "",
+          "bcc": ""
+        }
+      },
+      {
+        "sendmail": {
+          "emails": "test3@mail-composer.com,test4@mail-composer.com",
+          "subject": "Test subject 2 - Composer Project",
+          "message": "Test message 2 - Composer Project",
+          "cc": "",
+          "bcc": ""
+        }
+      }
+    ],
+    "failed": [
+      {
+        "sendmail": {
+          "emails": "test@mail-composer.com,test2@mail-composer.com",
+          "subject": "Test subject - Composer Project",
+          "message": "Test message - Composer Project",
+          "cc": "",
+          "bcc": ""
+        }
+      }
+    ]
+  }
 }
