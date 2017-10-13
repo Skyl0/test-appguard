@@ -1,0 +1,9 @@
+{
+    "version": 102,
+    "name": "friday demo",
+    "main_branch": "master",
+    "manager": "npm",
+    "integrations": [],
+    "update_behaviors": [],
+    "events": []
+}
