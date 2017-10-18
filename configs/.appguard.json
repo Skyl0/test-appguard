@@ -1,5 +1,7 @@
 {
-    "name": "AppGuard",
-    "main_branch": "master",
-    "manager": "npm"
+	"name": "AppGuard",
+    "manager": "npm",
+    "gitPath": "git@github.com:Skyl0/test-appguard.git",
+    "mainBranch": "master",
+    "rootFolder": "configs"
 }
