@@ -1,5 +1,5 @@
 {
     "name": "AppGuard",
     "main_branch": "master",
-    "manager": "npm",
+    "manager": "npm"
 }
