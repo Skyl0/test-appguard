@@ -2,6 +2,48 @@
     "name": "AppGuard",
     "main_branch": "master",
     "manager": "npm",
-    "update_behaviors": [],
-    "events": []
+  "update_behaviors": {
+    "update_patch_version": {
+      "auto_start_updates": "always"
+    },
+    "update_minor_version": {
+      "auto_start_updates": "always"
+    },
+    "update_major_version": {
+      "auto_start_updates": "always"
+    }
+  },
+  "events": {
+    "new_updates_available": [
+      {
+        "sendmail": {
+          "emails": "marc.ernst@brightsolutions.de",
+          "subject": "Test subject - NPM Project",
+          "message": "Test message - NPM Project",
+          "cc": "",
+          "bcc": ""
+        }
+      },
+      {
+        "sendmail": {
+          "emails": "test3@mail-npm.com,test4@mail-npm.com",
+          "subject": "Test subject 2 - NPM Project",
+          "message": "Test message 2 - NPM Project",
+          "cc": "",
+          "bcc": ""
+        }
+      }
+    ],
+    "failed": [
+      {
+        "sendmail": {
+          "emails": "test@mail-npm.com,test2@mail-npm.com",
+          "subject": "Test subject - NPM Project",
+          "message": "Test message - NPM Project",
+          "cc": "",
+          "bcc": ""
+        }
+      }
+    ]
+  }
 }
