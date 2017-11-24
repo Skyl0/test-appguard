@@ -4,10 +4,10 @@
   "description": "",
   "main": "index.js",
   "dependencies": {
-    "require": "^2.4.19"
+    "require": "^2.0.19"
   },
   "devDependencies": {
-    "fs-extra": "^3.0.0"
+    "fs-extra": "^2.0.0"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
